@@ -59,3 +59,29 @@ h2 {
     width: percentage($i / $grid-columns);
   }
 }
+.btn {
+    &--huge {
+        width: 100%;
+        background-color: #826550;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        margin: auto;
+        border: none;
+        transition: ease .2s;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+        &:hover {
+            background-color: #6a4d38;
+        }
+        &:active {
+            background-color: #6a4d38;
+            opacity: 0.3;
+        }
+        &--disabled {
+            background-color: #aeaeae;
+        }
+}
