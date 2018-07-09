@@ -1,3 +1,5 @@
 dist/*.html
 dist/css/
+src/html/
+src/css/
 prepros-6.config

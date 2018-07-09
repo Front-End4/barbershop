@@ -1,0 +1,41 @@
+.news{
+    &__link{
+        display: block;
+        justify-content: center;
+        flex-direction: row;
+        align-self: center;
+        text-decoration: none;
+    }
+    &__date{
+        color: white;
+        max-width: 35px;
+        display: block;
+    }
+    &__date--number{
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: 30px;
+        
+    }
+    &__date--wrapper{
+        background-color: black;
+        // position: absolute;
+        width: 50px;
+        height: 60px;
+        text-align: center;
+        text-overflow: clip;
+        display: block;
+        float: left;
+        &::after{
+            content: '';
+            clear: both;
+        }
+    }
+    &__text{
+        display: block;
+        padding-left: 70px;
+    }
+}
