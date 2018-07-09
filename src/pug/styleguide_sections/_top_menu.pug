@@ -3,14 +3,14 @@
         ul.top-menu__list
             each top_menu__text, number in ['Главная','Информация','Новости','Прайс-Лист','Контакты','Выйти']
                 li.top-menu__item
-                    if number = 5
+                    if number == 5
                         a.top-menu__link(href="javascript:void(0)")
-                            object(data="../img/login.svg", type="image/svg+xml")
+                            object.top-menu__login-ico(data="../img/login.svg", type="image/svg+xml")
                             span.top-menu__link--not-active= top_menu__text
                     else 
                         a.top-menu__link(href="javascript:void(0)")
-                            span.top-menu__link--active= top_menu__text
-    br
+                            span.top-menu__link--not-active= top_menu__text
+br
 .top-menu
     .container
         ul.top-menu__list

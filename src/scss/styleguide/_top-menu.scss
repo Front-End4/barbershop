@@ -16,17 +16,17 @@
     }
     &__item:last-child{
         margin-left: auto;
-        & span::before{
-            content: '';
-            background-image: url('../img/login.svg');
-            background-size: 16px 16px;
-            margin-right: 19px;
-            display: inline-block;
-            vertical-align: sub;
-            color: red;
-            width: 16px;
-            height: 16px;
-        }
+        // & span::before{
+        //     content: '';
+        //     background-image: url('../img/login.svg');
+        //     background-size: 16px 16px;
+        //     margin-right: 19px;
+        //     display: inline-block;
+        //     vertical-align: sub;
+        //     color: red;
+        //     width: 16px;
+        //     height: 16px;
+        // }
         }
     &__link{
         font-size: 14px;
@@ -75,16 +75,17 @@
             width: 0px;
             height: 0px;
             color: transparent;
-        }
-        & span::before{
-            content: url('../img/login.svg');
-            margin-right: 19px;
-            display: inline-block;
-            vertical-align: sub;
             }
-        }
-            &:hover{
-                color: #826550;
+        // // & span::before{
+        // //     content: url('../img/login.svg');
+        // //     margin-right: 19px;
+        // // //     display: inline-block;
+        // // //     vertical-align: sub;
+        // //     }
+        // }
+            // &:hover{
+            //     color: #826550;
+            // }}
             }
-    }
+    }        
 }
