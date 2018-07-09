@@ -53,6 +53,9 @@ h2 {
     padding: 0 $p-primary;
     box-sizing: border-box;
 }
+.col-w-4 {
+    width: calc(100%/3)
+}
 
 @for $i from 1 through $grid-columns {
   .col-#{$i} {
