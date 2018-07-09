@@ -6,13 +6,17 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Styleguide
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;subset=cyrillic")
-        link(rel="stylesheet", href="./css/styleguide.css")
+        link(rel="stylesheet", href="./css/style.css")
     body
+<<<<<<< HEAD
+=======
+    include ./styleguide_sections/_top_menu.pug
+    br
+    include ./styleguide_sections/_news.pug
+>>>>>>> ef77421e892e7aefe949cd30e1c893c517fe4096
     <div class="container">
         <form action="URL">
-            <div class="title title--center">
-                ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ:
-            </div>
+            <div class="title title--center">ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ:</div>
         <div class="row">
             <label class="col"><input type="radio" name="имя" checked>
                 <p>адмирал</p><img src="img/beard-1.png" alt=""></label>
@@ -25,9 +29,7 @@ html(lang="ru")
             <label class="col"><input type="radio" name="имя">
                 <p>мудрец</p><img src="img/beard-5.png" alt=""></label>
         </div>
-            <div class="title title--center">
-                ДОПОЛНИТЕЛЬНЫЙ УСЛУГИ:
-            </div>
+            <div class="title title--center">ДОПОЛНИТЕЛЬНЫЙ УСЛУГИ:</div>
             <div class="row">
             <label class="col"><input type="checkbox" id="" name="name" checked>Покрасить бороду</label>
             <label class="col"><input type="checkbox" id="" name="name">Причесать бороду</label>
@@ -44,3 +46,7 @@ html(lang="ru")
         </form>
     </div>
     include ./styleguide_sections/_top_menu.pug
+<<<<<<< HEAD
+=======
+
+>>>>>>> ef77421e892e7aefe949cd30e1c893c517fe4096
