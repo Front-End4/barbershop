@@ -1,0 +1,21 @@
+.top-menu {
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .top-menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .top-menu__item {
+    list-style: none; }
+  .top-menu__link {
+    height: 72px;
+    display: block;
+    background-color: black;
+    text-decoration: none; }
