@@ -1,13 +1,3 @@
-.nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    &__list{
-        & + & {
-            padding-left: 20px;
-        }
-    }
-}
 .menu {
     display: flex;
     flex-direction: row;
