@@ -1,20 +1,25 @@
-.top-menu
-    .container
-        ul.top-menu__list
-            each top_menu__text, number in ['Главная','Информация','Новости','Прайс-Лист','Контакты','Выйти']
-                li.top-menu__item
-                    if number = 5
-                        a.top-menu__link(href="javascript:void(0)")
-                            object(data="../img/login.svg", type="image/svg+xml")
-                            span.top-menu__link--not-active= top_menu__text
-                    else 
-                        a.top-menu__link(href="javascript:void(0)")
-                            span.top-menu__link--active= top_menu__text
-    br
-.top-menu
-    .container
-        ul.top-menu__list
-            each top_menu__text in ['Главная','Информация','Новости','Прайс-Лист','Контакты','Выйти']
-                li.top-menu__item
-                    a.top-menu__link(href="javascript:void(0)")
-                        span.top-menu__link--active= top_menu__text                
+.nav
+    ul.nav__list.menu
+        each top_menu__text, number in ['Главная','Информация','Новости','Прайс-Лист','Контакты']
+            li.menu__item.menu__item--active
+                a.menu__link(href="javascript:void(0)")
+                    span.menu__text= top_menu__text
+    ul.nav__list.menu
+        li.menu__item
+            a.menu__link(href="javascript:void(0)")
+                i.menu__icon
+                    object(data="./img/login.svg", type="image/svg+xml")
+                span.menu__text Выйти
+br
+.nav
+    ul.nav__list.menu
+        each top_menu__text, number in ['Главная','Информация','Новости','Прайс-Лист','Контакты']
+            li.menu__item.menu__item
+                a.menu__link(href="javascript:void(0)")
+                    span.menu__text= top_menu__text
+    ul.nav__list.menu
+        li.menu__item
+            a.menu__link(href="javascript:void(0)")
+                i.menu__icon
+                    object(data="./img/login.svg", type="image/svg+xml")
+                span.menu__text Выйти

@@ -1,0 +1,94 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &__item{
+        display: flex;
+        background-color: black;
+        color: white;
+        & + & {
+            margin-right: 1px;
+        }
+        &--active{
+            position: relative;
+            &:after {
+                content: '';
+                display: block;
+                height: 3px;
+                width: calc(100% - 60px);
+                background-color: #826550;
+                position: absolute;
+                bottom: 0;
+                left: 30px;
+            }
+        }
+        &:hover{
+            a {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 15px 30px;
+        box-sizing: border-box;
+        color: currentColor;
+        transition: .2s background-color ease-in-out;
+        &:focus {
+            background-color: white;
+            color: black;
+        }
+        &:active {
+            span {
+                opacity: .3;
+            }
+        }
+    }
+    &__text {
+        transition: .2s opacity ease-in-out;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__icon {
+        margin-right: 20px;
+        width: 16px;
+        height: 16px;
+        filter: invert(1);
+        * {
+            display: block;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+    .top-menu{
+    &__item:last-child{
+    margin-left: auto;
+        & span{
+            width: 0px;
+            height: 0px;
+            color: transparent;
+            }
+        // // & span::before{
+        // //     content: url('../img/login.svg');
+        // //     margin-right: 19px;
+        // // //     display: inline-block;
+        // // //     vertical-align: sub;
+        // //     }
+        // }
+            // &:hover{
+            //     color: #826550;
+            // }}
+            }
+    }        
+}
