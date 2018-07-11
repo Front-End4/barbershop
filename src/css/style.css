@@ -1076,3 +1076,7 @@ input[type="submit"] {
   background-color: black; }
   .nav__list + .nav__list {
     padding-left: 20px; }
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px; } }
