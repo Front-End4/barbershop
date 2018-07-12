@@ -1,6 +1,10 @@
-// @media screen and (max-width: 576px){
+@media screen and (max-width: 576px){
     .footer{
-    background-color: #292929;
+        margin-bottom: 25px;
+        .container {
+            background-color: #292929;
+            max-width: 540px;
+        }
         &__info {
             color: white;
             font-size: 18px;
@@ -16,7 +20,7 @@
         &__phone {
             border: 1px solid #3f3f3f;
             text-align: center;
-
+            margin-bottom: 30px;
         }
         &__social {
             display: flex;
@@ -41,10 +45,16 @@
         width: 100%;
         box-sizing: border-box;
         border: 1px solid #3f3f3f;
-        line-height: 3;
+        padding-bottom: 100%;
+        position: relative;
+        margin-bottom: 25px;
+        i {
+            position: absolute;
+            top: 33%;
+        }
     }
     .footer--col {
         padding: 0;
     }
 
-// }
+}
