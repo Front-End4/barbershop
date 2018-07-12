@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    &__checkbox, &__hamburger, &__hidden{
+        display: none;
+    }
     &__item{
         display: flex;
         background-color: black;

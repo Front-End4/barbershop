@@ -1,4 +1,14 @@
 .nav
+    input.menu__checkbox(type='checkbox' id='hidmenu')
+    label.menu__hamburger(for="hidmenu")
+        span.first
+        span.second
+        span.third
+    .menu__hidden
+        ul.menu.nav__list--hidden
+            li.menu__item.menu__item--hidden
+                span.menu__hidden--text Главная
+                
     ul.nav__list.menu
         each top_menu__text, number in ['Главная','Информация','Новости','Прайс-Лист','Контакты']
             li.menu__item.menu__item--active
