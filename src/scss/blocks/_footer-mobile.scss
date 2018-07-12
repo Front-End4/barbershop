@@ -1,6 +1,29 @@
-// @media screen and (max-width: 576px){
+@media screen and (min-width: 320px){
     .footer{
-    background-color: #292929;
+        .container {
+            background-color: #292929;
+            padding-bottom: 25px;
+        }
+        &__triangle {
+            display: flex;
+            flex-direction: row;
+            max-width: 100%;
+            box-sizing: border-box;
+            margin-bottom: -2px;
+            // margin-top:-36px;
+            &--left {
+                width: 0;
+                height: 0;
+                border-bottom: 35px solid #292929; 
+                border-right: 170px solid transparent;
+            }
+            &--right {
+                width: 0;
+                height: 0;
+                border-bottom: 35px solid #292929;
+                border-left: 170px solid transparent;
+            }
+        }
         &__info {
             color: white;
             font-size: 18px;
@@ -16,11 +39,21 @@
         &__phone {
             border: 1px solid #3f3f3f;
             text-align: center;
-
+            margin-bottom: 30px;
+            transition: 0.2s ease;
+            &:hover {
+                border: 1px solid #545454;
+        }
+            &:visited, &:active {
+                border: 1px transparent;
+                background-color: #252525;
         }
         &__social {
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            margin: 0 auto;
+            width: 100%;
             // border: 1px solid #3f3f3f;
         }
     }
@@ -38,13 +71,24 @@
         text-decoration: none;
         font-size: 36px;
         color: white;
-        width: 100%;
-        box-sizing: border-box;
-        border: 1px solid #3f3f3f;
-        line-height: 3;
+        position: relative;
+        height: 100px;
+        width: 100px;
+        i {
+            position: absolute;
+            top: 33%;
+        }
     }
     .footer--col {
         padding: 0;
+        box-sizing: border-box;
+        border: 1px solid #3f3f3f;
+        &:hover {
+            border: 1px solid #545454;
+        }
+        &:visited, &:active {
+            border: 1px transparent;
+            background-color: #252525;
+        }
     }
-
-// }
+}
