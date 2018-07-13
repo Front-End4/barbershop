@@ -43,10 +43,11 @@
             transition: 0.2s ease;
             &:hover {
                 border: 1px solid #545454;
-        }
+            }
             &:visited, &:active {
                 border: 1px transparent;
                 background-color: #252525;
+            }
         }
         &__social {
             display: flex;
