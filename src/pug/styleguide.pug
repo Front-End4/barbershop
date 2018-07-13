@@ -9,6 +9,71 @@ html(lang="ru")
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
         link(rel="stylesheet", href="./css/style.css")
     body
+    include ./styleguide_sections/_top_menu.pug
+    //- include ./styleguide_sections/footer.pug
+    //- br
+    //- include ./styleguide_sections/_news.pug
+    //- <div class="container">
+    //-     .form
+    //-         <form action="URL" method="get">
+    //-             <div class="title title--center">ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ:</div>
+    //-         <div class="row">
+    //-             .form__field
+    //-                 input#radio1(type="radio", name="radio").form__input.form__input--radio
+    //-                 label.form__label(for="radio1")
+    //-                     span.form__text Хочу покрасить!
+    //-             .form__field
+    //-                 input#radio2(type="radio", name="radio", checked="checked").form__input.form__input--radio
+    //-                 label.form__label(for="radio2")
+    //-                     i.form__icon
+    //-                         object(data="./img/login.svg", type="image/svg+xml")
+    //-                     span.form__text Хочу покрасить!
+    include ./styleguide_sections/_footer.pug
+    br
+    include ./styleguide_sections/_news.pug
+    <div class="container">
+        .form
+            <form action="URL" method="get">
+                <div class="title title--center">ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ:</div>
+            <div class="row">
+                .form__field
+                    input#radio1(type="radio", name="radio").form__input.form__input--radio
+                    label.form__label(for="radio1")
+                        span.form__text Хочу покрасить!
+                .form__field
+                    input#radio2(type="radio", name="radio", checked="checked").form__input.form__input--radio
+                    label.form__label(for="radio2")
+                        i.form__icon
+                            object(data="./img/login.svg", type="image/svg+xml")
+                        span.form__text Хочу покрасить!
+
+    //-             //- <label class="col"><input type="radio" name="имя" checked>
+    //-             //-     <p>адмирал</p><img src="img/beard-1.png" alt=""></label>
+    //-             //- <label class="col"><input type="radio" name="имя">
+    //-             //-     <p>лесоруб</p><img src="img/beard-2.png" alt=""></label>
+    //-             //- <label class="col"><input type="radio" name="имя">
+    //-             //-     <p>полярник</p><img src="img/beard-3.png" alt=""></label>
+    //-             //- <label class="col"><input type="radio" name="имя">
+    //-             //-     <p>боярин</p><img src="img/beard-4.png" alt=""></label>
+    //-             //- <label class="col"><input type="radio" name="имя">
+    //-             //-     <p>мудрец</p><img src="img/beard-5.png" alt=""></label>
+    //-         </div>
+    //-         //-     <div class="title title--center">ДОПОЛНИТЕЛЬНЫЙ УСЛУГИ:</div>
+    //-         //-     <div class="row">
+    //-         //-     <label class="col"><input type="checkbox" id="" name="name" checked>Покрасить бороду</label>
+    //-         //-     <label class="col"><input type="checkbox" id="" name="name">Причесать бороду</label>
+    //-         //-     <label class="col"><input type="checkbox" id="" name="name">Убрать усы</label>
+    //-         //- </div>
+    //-         //- <div class="row">
+    //-         //-     <label class="col"><input type="checkbox" id="" name="name" checked>Накрутить усы</label>
+    //-         //-     <label class="col"><input type="checkbox" id="" name="name">Подровнять виски</label>
+    //-         //-     <label class="col"><input type="checkbox" id="" name="name">Отполировать лысину</label>
+    //-         //- </div>   
+    //-         //- <div class="row">
+    //-         //-     <label class="col"><input type="submit"></label>
+    //-         //- </div>
+    //-         </form>
+    //- </div>
         include ./styleguide_sections/_top_menu.pug
         include ./styleguide_sections/_footer.pug
         br
