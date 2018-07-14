@@ -1,0 +1,13 @@
+mixin form_radio(text, index)
+    .form__field
+        input(type="radio", name="radio", id="radio" + index).form__input.form__input--radio
+        label.form__label(for="radio" + index)
+            span.form__text= text
+        
+mixin form_input(placeholder, type, textarea)
+    .form__field
+        if textarea
+            textarea(name=placeholder, placeholder=placeholder).form__input.form__input--textarea
+        else
+            input(type=type, name=placeholder, placeholder=placeholder).form__input
+    
