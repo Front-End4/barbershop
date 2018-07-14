@@ -8,12 +8,9 @@ html(lang="ru")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&amp;subset=cyrillic")
         link(rel="stylesheet", href="./css/style.css")
     body
-<<<<<<< HEAD
-=======
     include ./styleguide_sections/_top_menu.pug
     br
     include ./styleguide_sections/_news.pug
->>>>>>> ef77421e892e7aefe949cd30e1c893c517fe4096
     <div class="container">
         <form action="URL">
             <div class="title title--center">ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ:</div>
@@ -30,23 +27,40 @@ html(lang="ru")
                 <p>мудрец</p><img src="img/beard-5.png" alt=""></label>
         </div>
             <div class="title title--center">ДОПОЛНИТЕЛЬНЫЙ УСЛУГИ:</div>
-            <div class="row">
-            <label class="col"><input type="checkbox" id="" name="name" checked>Покрасить бороду</label>
-            <label class="col"><input type="checkbox" id="" name="name">Причесать бороду</label>
-            <label class="col"><input type="checkbox" id="" name="name">Убрать усы</label>
+          <div class="row">
+             <label class="col col--checkbox">
+                <input class="checkbox" type="checkbox" name="checkbox-test" checked>
+                <span class="checkbox-custom"></span>
+                <span class="label"> Подкрасить бороду</span>
+            </label>
+            <label class="col col--checkbox">
+                <input class="checkbox" type="checkbox" name="checkbox-test">
+                <span class="checkbox-custom"></span>
+                <span class="label">Причесать бороду</span>
+            </label>
+            <label class="col col--checkbox">
+                <input class="checkbox" type="checkbox" name="checkbox-test">
+                <span class="checkbox-custom"></span>
+                <span class="label">Убрать седину</span>
+            </label>
         </div>
         <div class="row">
-            <label class="col"><input type="checkbox" id="" name="name" checked>Накрутить усы</label>
-            <label class="col"><input type="checkbox" id="" name="name">Подровнять виски</label>
-            <label class="col"><input type="checkbox" id="" name="name">Отполировать лысину</label>
-        </div>   
-        <div class="row">
-            <label class="col"><input type="submit"></label>
-        </div>
+                <label class="col col--checkbox">
+                    <input class="checkbox" type="checkbox" name="checkbox-test" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Накрутить усы</span>
+                </label>
+                <label class="col col--checkbox">
+                    <input class="checkbox" type="checkbox" name="checkbox-test">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Подровнять виски</span>
+                </label>
+                <label class="col col--checkbox">
+                    <input class="checkbox" type="checkbox" name="checkbox-test">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Отполировать лысину</span>
+                </label>
         </form>
     </div>
     include ./styleguide_sections/_top_menu.pug
-<<<<<<< HEAD
-=======
 
->>>>>>> ef77421e892e7aefe949cd30e1c893c517fe4096
