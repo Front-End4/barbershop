@@ -119,13 +119,13 @@
         left: 70px;
       }
       .menu__checkbox:checked ~ .menu__hamburger span.first {
-        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
         top: 6px;
       }
       .menu__checkbox:checked ~ .menu__hamburger span.second {
         opacity: 0;
       }
       .menu__checkbox:checked ~ .menu__hamburger span.third {
-        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
         top: -10px;
       }
