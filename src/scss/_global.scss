@@ -4,6 +4,9 @@
 $grid-columns: 12;
 $p-primary: 15px;
 
+body{
+    background-color: #f8f5f2;
+}
 html {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 18px;
@@ -40,6 +43,7 @@ h2 {
     margin: 0 auto;
     width: 100%;
     padding: 0 $p-primary;
+    box-sizing: border-box;
 }
 
 .row {
@@ -52,6 +56,12 @@ h2 {
 .col {
     padding: 0 $p-primary;
     box-sizing: border-box;
+}
+.col-w-1{
+    width: 100%;
+}
+.col-w-4 {
+    width: calc(100%/3)
 }
 
 @for $i from 1 through $grid-columns {

@@ -1,0 +1,73 @@
+.form {
+    &__field {
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        &--radio, &--checkbox {
+            display: none;
+        }
+        &:checked {
+            + label {
+                &:after {
+                    background-color: white;
+                    border-color: #e5ddd5;
+                }
+                &:hover, &:focus {
+                    &:after {
+                        background-color: white;
+                        border-color: #d5c9bd;
+                    }
+                }
+                &:active {
+                    &:after {
+                        background-color: #d5c9bd;
+                    }
+                }
+            }
+        }
+    }
+    [type="radio"] + &__label {
+        color: black;
+        font-size: 24px;
+        line-height: 1.25;
+        position: relative;
+        padding-left: 90px;
+        &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+        }
+        &:before {
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border: 1px solid #e5ddd5;
+            left: 0;
+        }
+        &:after {
+            width: 28px;
+            height: 28px;
+            border: 1px solid transparent;
+            left: calc(72px / 2 - 28px / 2);
+        }
+        &:hover, &:focus {
+            &:before {
+                border-color: #d5c9bd;
+            }
+        }
+        &:active {
+            &:before {
+                border-color: #d5c9bd;
+                background-color: #d5c9bd;
+            }
+            &:after {
+                background-color: white;
+                border-color: #d5c9bd;
+            }
+        }
+    }
+}

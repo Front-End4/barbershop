@@ -1,6 +1,4 @@
 @import './global';
-@import './styleguide/_top-menu.scss';
-@import './styleguide/_news.scss';
 
 body{
     background-color: #f8f5f2;
@@ -50,6 +48,7 @@ input[type="submit"]{
     border: none;
 }
 
+<<<<<<< HEAD:src/scss/styleguide.scss
 
 .checkbox {
 	display: none;
@@ -91,3 +90,5 @@ input[type="submit"]{
 .checkbox:hover + .checkbox-custom{
     background-color: white;
 }
+=======
+>>>>>>> dd0167f212b4950ccb51bf7d4dd21894477cba2d:src/scss/blocks/_title.scss

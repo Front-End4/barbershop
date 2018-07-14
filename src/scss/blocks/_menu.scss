@@ -1,19 +1,12 @@
-.nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    &__list{
-        & + & {
-            padding-left: 20px;
-        }
-    }
-}
 .menu {
     display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
     list-style: none;
+    &__checkbox, &__hamburger, &__hidden{
+        display: none;
+    }
     &__item{
         display: flex;
         background-color: black;

@@ -1,25 +1,35 @@
 .nav
-    ul.nav__list.menu
-        each top_menu__text, number in ['Главная','Информация','Новости','Прайс-Лист','Контакты']
-            li.menu__item.menu__item--active
+    input.menu__checkbox(type='checkbox' id='hidmenu')
+    label.menu__hamburger(for="hidmenu")
+        span.first
+        span.second
+        span.third
+    .menu__hidden
+        ul.menu.nav__list--hidden
+            li.menu__item.menu__item--hidden
+                span.menu__hidden--text Главная
+    .nav__mobile-wrapper             
+        ul.nav__list.menu
+            each top_menu__text, number in ['Главная','Информация','Новости','Прайс-Лист','Контакты']
+                li.menu__item.menu__item--active
+                    a.menu__link(href="javascript:void(0)")
+                        span.menu__text= top_menu__text
+        ul.nav__list.menu
+            li.menu__item
                 a.menu__link(href="javascript:void(0)")
-                    span.menu__text= top_menu__text
-    ul.nav__list.menu
-        li.menu__item
-            a.menu__link(href="javascript:void(0)")
-                i.menu__icon
-                    object(data="./img/login.svg", type="image/svg+xml")
-                span.menu__text Выйти
-br
-.nav
-    ul.nav__list.menu
-        each top_menu__text, number in ['Главная','Информация','Новости','Прайс-Лист','Контакты']
-            li.menu__item.menu__item--active
-                a.menu__link(href="javascript:void(0)")
-                    span.menu__text= top_menu__text
-    ul.nav__list.menu
-        li.menu__item
-            a.menu__link(href="javascript:void(0)")
-                i.menu__icon
-                    object(data="./img/login.svg", type="image/svg+xml")
-                span.menu__text Выйти
+                    i.menu__icon
+                        object(data="./img/login.svg", type="image/svg+xml")
+                    span.menu__text Выйти
+//- br
+//- .nav
+//-     ul.nav__list.menu
+//-         each top_menu__text, number in ['Главная','Информация','Новости','Прайс-Лист','Контакты']
+//-             li.menu__item.menu__item
+//-                 a.menu__link(href="javascript:void(0)")
+//-                     span.menu__text= top_menu__text
+//-     ul.nav__list.menu
+//-         li.menu__item
+//-             a.menu__link(href="javascript:void(0)")
+//-                 i.menu__icon
+//-                     object(data="./img/login.svg", type="image/svg+xml")
+//-                 span.menu__text Выйти
