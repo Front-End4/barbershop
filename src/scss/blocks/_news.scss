@@ -1,15 +1,41 @@
 .news{
+    &__wrapper{
+        width: 280px;
+        text-decoration: none;
+        color: black;
+    }
     &__link{
         display: block;
         justify-content: center;
         flex-direction: row;
         align-self: center;
         text-decoration: none;
+        color: inherit;
+        transition: .2s ease-in color;
+        &:hover{
+            text-decoration: underline;
+            color: #826550;
+            .news__date--wrapper{
+                background-color: #826550;
+            }
+        }
+        &:active, &:focus{
+            color: #6a4d38;
+            .news__date--wrapper{
+                background-color: #6a4d38;
+                .news__date{
+                    opacity: 0.3;
+                }
+            }
+        }
     }
     &__date{
         color: white;
-        max-width: 35px;
+        max-width: 27px;
         display: block;
+        line-height: 1;
+        overflow: hidden;
+        margin: 0 auto;
     }
     &__date--number{
         display: block;
@@ -22,20 +48,37 @@
     }
     &__date--wrapper{
         background-color: black;
-        // position: absolute;
+        position: relative;
+        top: 12px;
         width: 50px;
         height: 60px;
         text-align: center;
-        text-overflow: clip;
         display: block;
         float: left;
+        transition: .2s ease-in background-color;
         &::after{
             content: '';
             clear: both;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-style: solid;
+            border-width: 10px 0 0 25px;
+            border-color: transparent transparent transparent #f8f5f2;
         }
-    }
+        &::before{
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-style: solid;
+            border-width: 0 0 10px 25px;
+            border-color: transparent transparent #f8f5f2 transparent;
+        }
+        }
     &__text{
         display: block;
         padding-left: 70px;
+        line-height: 1.5;
     }
 }
