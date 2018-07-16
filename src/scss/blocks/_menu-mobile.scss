@@ -5,6 +5,7 @@
             max-width: calc(100vw - 70px);
             background-color: transparent;
             position: absolute;
+            justify-content: space-between;
             top: 0;
             left: -100vw;
             z-index: 999;
@@ -107,7 +108,13 @@
             }
         &__text{
             width: 100vw;
+            &--hidden{
+                display: block;
             }
+        }
+        &__icon{
+            margin-right: 20px;
+        }
         }
     }
 

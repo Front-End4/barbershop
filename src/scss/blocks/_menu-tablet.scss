@@ -1,6 +1,28 @@
 @media screen and (max-width: 768px) {
     .nav{
-        justify-content: center;
-        
+        &__mobile-wrapper{
+            justify-content: center;
+        }
+    }
+    .menu{
+        &__link{
+            padding: 15px 15px;
+        }
+        &__item{
+            &--active{
+                &:after{
+                    width: calc(100% - 30px);
+                    left: 15px;
+                }
+            }
+        }
+        &__text{
+            &--hidden{
+                display: none;
+            }
+        }
+        &__icon{
+            margin-right: 0;
+        }
     }
 }
