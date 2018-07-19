@@ -1,5 +1,7 @@
 @media screen and (min-width: 320px){
     .footer{
+        box-sizing: border-box;
+        width: 100%;
         .container {
             background-color: #292929;
             padding-bottom: 25px;
@@ -10,6 +12,7 @@
             width: 100%;
             box-sizing: border-box;
             margin-bottom: -2px;
+            flex-grow: 1;
             // margin-top:-36px;
             &--left {
                 width: 0;
@@ -20,6 +23,7 @@
             &--right {
                 width: 0;
                 height: 0;
+                margin-bottom: 2px;
                 border-bottom: 35px solid #292929;
                 border-left: 50vw solid transparent;
             }
