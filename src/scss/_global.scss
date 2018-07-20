@@ -36,6 +36,32 @@ h2 {
     .btn--dark {
         border: 1px solid #ffffff;
     }
+    &--huge {
+        width: 100%;
+        background-color: #826550;
+        font-size: 24px;
+        line-height: 2;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        border: none;
+        transition: ease .2s;
+        cursor: pointer;
+        white-space: nowrap;
+        display: block;
+    }
+        &:hover {
+            background-color: #6a4d38;
+        }
+        &:active {
+            background-color: #6a4d38;
+            opacity: 0.3;
+        }
+        &--disabled {
+            background-color: #aeaeae;
+        }
 }
 
 .container {
@@ -68,30 +94,4 @@ h2 {
   .col-#{$i} {
     width: percentage($i / $grid-columns);
   }
-}
-.btn {
-    &--huge {
-        width: 100%;
-        background-color: #826550;
-        font-size: 24px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: white;
-        text-align: center;
-        margin: auto;
-        border: none;
-        transition: ease .2s;
-        cursor: pointer;
-        white-space: nowrap;
-    }
-        &:hover {
-            background-color: #6a4d38;
-        }
-        &:active {
-            background-color: #6a4d38;
-            opacity: 0.3;
-        }
-        &--disabled {
-            background-color: #aeaeae;
-        }
 }
