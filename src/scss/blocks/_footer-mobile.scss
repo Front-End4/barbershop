@@ -140,7 +140,7 @@
         
         }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
     .footer {
         &__triangle {
             display: none;
@@ -193,7 +193,7 @@
             }
         }
         &--col {
-            width: 213px;
+            width: 30%;
         }
     }
     .phone__link {
@@ -208,9 +208,9 @@
         }
     }
     .social__link {
-        width: 213px;
+        width: 100%;
         & i {
-            left: 40%;
+            left: 45%;
         }
     }  
 }

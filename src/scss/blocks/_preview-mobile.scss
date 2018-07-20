@@ -45,7 +45,7 @@
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 576px){
     .preview {
         background: url(/dist/img/back-tablet.jpg);
         background-size: cover;
@@ -60,7 +60,7 @@
         }
         .container {
             position: relative;
-            max-width: 640px;
+            max-width: 85%;
             display: flex;
             text-align: left;
             flex-grow: 1;
