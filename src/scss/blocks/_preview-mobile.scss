@@ -44,13 +44,26 @@
 
 @media screen and (min-width: 768px){
     .preview {
+        background: url(/dist/img/back-tablet.jpg);
+        background-size: cover;
+        padding-top: 38%;
         .container {
+            position: relative;
             max-width: 640px;
             display: flex;
             text-align: left;
             flex-grow: 1;
             &:before {
                 display: block;
+            }
+            &:after {
+                position: absolute;
+                z-index: 4;
+                background-image: url(/dist/img/logotype-tablet.png);
+                top: 0;
+                left: 0;
+                width: 200px;
+                height: auto;
             }
         }
         &__header {
