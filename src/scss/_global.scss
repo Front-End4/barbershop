@@ -1,8 +1,11 @@
 @import 'normalize';
 
 // variables
-$grid-columns: 12;
 $p-primary: 15px;
+
+* {
+    box-sizing: border-box;
+}
 
 body{
     background-color: #f8f5f2;
@@ -62,36 +65,4 @@ h2 {
         &--disabled {
             background-color: #aeaeae;
         }
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 $p-primary;
-    box-sizing: border-box;
-}
-
-.row {
-    margin-left: -$p-primary;
-    margin-right: -$p-primary;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col {
-    padding: 0 $p-primary;
-    box-sizing: border-box;
-}
-.col-w-1{
-    width: 100%;
-}
-.col-w-4 {
-    width: calc(100%/3)
-}
-
-@for $i from 1 through $grid-columns {
-  .col-#{$i} {
-    width: percentage($i / $grid-columns);
-  }
 }
