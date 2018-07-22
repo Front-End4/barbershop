@@ -9,71 +9,71 @@ html(lang="ru")
 		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
 		link(rel="stylesheet", href="./css/style.css")
 	body
-		include ./styleguide_sections/_top_menu.pug
+		//- include ./styleguide_sections/_top_menu.pug
 		include ./styleguide_sections/_preview.pug
 		hr
-		include ./styleguide_sections/_news.pug
-		hr
-		include ./styleguide_sections/_form.pug
-		hr
-		<form action="URL">
-			<div class="title title--center">ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ:</div>
-		<div class="row">
-			<label class="col"><input type="radio" name="имя" checked>
-				<p>адмирал</p><img src="img/beard-1.png" alt=""></label>
-			<label class="col"><input type="radio" name="имя">
-				<p>лесоруб</p><img src="img/beard-2.png" alt=""></label>
-			<label class="col"><input type="radio" name="имя">
-				<p>полярник</p><img src="img/beard-3.png" alt=""></label>
-			<label class="col"><input type="radio" name="имя">
-				<p>боярин</p><img src="img/beard-4.png" alt=""></label>
-			<label class="col"><input type="radio" name="имя">
-				<p>мудрец</p><img src="img/beard-5.png" alt=""></label>
-		</div>
-		<div class="title title--center">ДОПОЛНИТЕЛЬНЫЙ УСЛУГИ:</div>
-		<div class="row">
-			<label class="col col--checkbox">
-				<input class="checkbox" type="checkbox" name="checkbox-test" checked>
-				<span class="checkbox-custom"></span>
-				<span class="label"> Подкрасить бороду</span>
-			</label>
-			<label class="col col--checkbox">
-				<input class="checkbox" type="checkbox" name="checkbox-test">
-				<span class="checkbox-custom"></span>
-				<span class="label">Причесать бороду</span>
-			</label>
-			<label class="col col--checkbox">
-				<input class="checkbox" type="checkbox" name="checkbox-test">
-				<span class="checkbox-custom"></span>
-				<span class="label">Убрать седину</span>
-			</label>
-		</div>
-		<div class="row">
-				<label class="col col--checkbox">
-					<input class="checkbox" type="checkbox" name="checkbox-test" checked>
-					<span class="checkbox-custom"></span>
-					<span class="label">Накрутить усы</span>
-				</label>
-				<label class="col col--checkbox">
-					<input class="checkbox" type="checkbox" name="checkbox-test">
-					<span class="checkbox-custom"></span>
-					<span class="label">Подровнять виски</span>
-				</label>
-				<label class="col col--checkbox">
-					<input class="checkbox" type="checkbox" name="checkbox-test">
-					<span class="checkbox-custom"></span>
-					<span class="label">Отполировать лысину</span>
-				</label>
-		</form>
-		</div>
-		.form
-			<form action="URL" method="get">
-				<div class="title title--center">ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ:</div>
-			.row
-				- var radios = ['адмирал', 'лесоруб', 'полярник', 'боярин', 'мудрец']
-				each val, index in radios
-					.w-1-5
-						+form_input(val, 'text')
+		//- include ./styleguide_sections/_news.pug
+		//- hr
+		//- include ./styleguide_sections/_form.pug
+		//- hr
+		//- <form action="URL">
+		//- 	<div class="title title--center">ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ:</div>
+		//- <div class="row">
+		//- 	<label class="col"><input type="radio" name="имя" checked>
+		//- 		<p>адмирал</p><img src="img/beard-1.png" alt=""></label>
+		//- 	<label class="col"><input type="radio" name="имя">
+		//- 		<p>лесоруб</p><img src="img/beard-2.png" alt=""></label>
+		//- 	<label class="col"><input type="radio" name="имя">
+		//- 		<p>полярник</p><img src="img/beard-3.png" alt=""></label>
+		//- 	<label class="col"><input type="radio" name="имя">
+		//- 		<p>боярин</p><img src="img/beard-4.png" alt=""></label>
+		//- 	<label class="col"><input type="radio" name="имя">
+		//- 		<p>мудрец</p><img src="img/beard-5.png" alt=""></label>
+		//- </div>
+		//- <div class="title title--center">ДОПОЛНИТЕЛЬНЫЙ УСЛУГИ:</div>
+		//- <div class="row">
+		//- 	<label class="col col--checkbox">
+		//- 		<input class="checkbox" type="checkbox" name="checkbox-test" checked>
+		//- 		<span class="checkbox-custom"></span>
+		//- 		<span class="label"> Подкрасить бороду</span>
+		//- 	</label>
+		//- 	<label class="col col--checkbox">
+		//- 		<input class="checkbox" type="checkbox" name="checkbox-test">
+		//- 		<span class="checkbox-custom"></span>
+		//- 		<span class="label">Причесать бороду</span>
+		//- 	</label>
+		//- 	<label class="col col--checkbox">
+		//- 		<input class="checkbox" type="checkbox" name="checkbox-test">
+		//- 		<span class="checkbox-custom"></span>
+		//- 		<span class="label">Убрать седину</span>
+		//- 	</label>
+		//- </div>
+		//- <div class="row">
+		//- 		<label class="col col--checkbox">
+		//- 			<input class="checkbox" type="checkbox" name="checkbox-test" checked>
+		//- 			<span class="checkbox-custom"></span>
+		//- 			<span class="label">Накрутить усы</span>
+		//- 		</label>
+		//- 		<label class="col col--checkbox">
+		//- 			<input class="checkbox" type="checkbox" name="checkbox-test">
+		//- 			<span class="checkbox-custom"></span>
+		//- 			<span class="label">Подровнять виски</span>
+		//- 		</label>
+		//- 		<label class="col col--checkbox">
+		//- 			<input class="checkbox" type="checkbox" name="checkbox-test">
+		//- 			<span class="checkbox-custom"></span>
+		//- 			<span class="label">Отполировать лысину</span>
+		//- 		</label>
+		//- </form>
+		//- </div>
+		//- .form
+		//- 	<form action="URL" method="get">
+		//- 		<div class="title title--center">ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ:</div>
+		//- 	.row
+		//- 		- var radios = ['адмирал', 'лесоруб', 'полярник', 'боярин', 'мудрец']
+		//- 		each val, index in radios
+		//- 			.w-1-5
+		//- 				+form_input(val, 'text')
 				
-		hr
-		include ./styleguide_sections/_footer.pug
+		//- hr
+		//- include ./styleguide_sections/_footer.pug
