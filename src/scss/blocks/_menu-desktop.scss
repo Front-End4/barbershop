@@ -1,27 +1,12 @@
 @media screen and (min-width: 992px){
     .nav{
-        position: relative;
         &__mobile-wrapper{
-            max-width: calc(100vw - 70px);
-            background-color: transparent;
-            position: absolute;
             justify-content: space-between;
-            top: 0;
-            left: -100vw;
-            z-index: 999;
-            transition: left .3s;
-            flex-wrap: wrap;
         }
-
-        &__list + &__list{
-            padding-left: 0px;
-        }
-        
-    }    
+    }
 
     
         .menu{
-        flex-direction: row;
         // &__hamburger {
         //     box-sizing: border-box;
         //     display: block;
@@ -52,6 +37,8 @@
         // }
         &__item{
             background-color: black;
+            width: auto;
+            box-shadow: none;
             & + &{
                 margin-right: 1px;
             }
@@ -62,55 +49,30 @@
             //     justify-content: center;
             //     align-items: center;
             //     flex-wrap: wrap;
-            }
+            
             &--active{
                 &::after{
-                    content: '';
-                    display: block;
-                    height: 3px;
                     width: calc(100% - 60px);
-                    background-color: #826550;
-                    position: absolute;
-                    bottom: 0;
                     left: 30px;
                 }
             }
-            &:hover{
-                a {
-                    i{
-                        filter: invert(1);
-                    }
-                    background-color: white;
-                    color: black;
-                }
-                
-                
+        }
+       
+        &__text{
+            &--hidden{
+                display: flex;
             }
-        // &__hidden{
-        //     display: flex;
-        //     justify-content: flex-start;
-        //     width: 100vw;
-        //     &--text{
-        //         padding: 3px 5px;
-        //         text-transform: uppercase;
-        //         font-size: 14px;
-        //         font-weight: 700;
-        //     }
-        // }
-            & > ul{
-                    display: flex;
-                    justify-content: flex-start;
-                    flex-direction: row;
-            }
+        }
+        &__icon{
+            margin-right: 20px;
+            // & > ul{
+            //         display: flex;
+            //         justify-content: flex-start;
+            //         flex-direction: row;
+            // }
+        }
         &__link {
             padding: 15px 30px;
-            &:focus {
-                i{
-                    filter: invert(1);
-                }
-                background-color: white;
-                color: black;
-            }
             }
         }
     }
