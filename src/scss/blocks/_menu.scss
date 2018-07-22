@@ -1,60 +1,105 @@
 .menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     list-style: none;
     &__checkbox, &__hamburger, &__hidden{
         display: none;
     }
+    &__hamburger {
+        box-sizing: border-box;
+        display: block;
+        color: #fff;
+        background-color: #6a4d38;
+        padding: 5px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: calc(100vw - 70px);
+        transition: left .3s;
+        z-index: 1000;
+        width: 70px;
+        height: 50px;
+        padding: 17px;
+        & > span{
+            display: block;
+            height: 3px;
+            width: 35px;
+            background-color: #fff;
+            margin: 5px 0 0;
+            transition: all .1s linear .23s;
+            position: relative;
+        }
+        & > .first{
+            margin-top: 0;
+        }
+    }
     &__item{
         display: flex;
-        background-color: black;
         color: white;
+        width: 100%;
+        background-color: #826550;
+        box-shadow: 0 1px 0 #71543f, inset 0 1px 0 #886e5b;
         & + & {
-            margin-right: 1px;
+            margin-right: 0px;
+        }
+        &--hidden{
+            box-sizing: border-box;
+            width: 100vw;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
         }
         &--active{
             position: relative;
             &:after {
-                content: '';
-                display: block;
-                height: 3px;
-                width: calc(100% - 60px);
-                background-color: #826550;
-                position: absolute;
-                bottom: 0;
-                left: 30px;
+                display: none;
             }
         }
+        
         &:hover{
-            a {
-                i{
-                    filter: invert(1);
+                a{
+                background-color: #755a46;
+                color: white;
                 }
-                background-color: white;
-                color: black;
-            }
         }
+    }
+    &__hidden{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        &--text{
+            padding: 3px 5px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+    & > ul{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
     }
     &__link{
         display: flex;
         align-items: center;
         text-decoration: none;
-        padding: 15px 30px;
+        justify-content: flex-start;
+        width: 100vw;
+        padding: 10px 30px;
         box-sizing: border-box;
         color: currentColor;
         transition: .2s background-color ease-in-out;
-        &:focus {
-            i{
-                filter: invert(1);
+        &:focus{
+            background-color: #826550;
+            color: white;
             }
-            background-color: white;
-            color: black;
-        }
         &:active {
             span {
                 opacity: .3;
+                background-color: #6a4d38;
             }
         }
     }
@@ -63,6 +108,10 @@
         text-transform: uppercase;
         font-size: 14px;
         font-weight: 700;
+        width: 100vw;
+        &--hidden{
+            display: block;
+        }
     }
     &__icon {
         filter: brightness(1000%);
@@ -74,3 +123,22 @@
         }
     }
 }
+ // magick
+ .menu__checkbox:checked ~ .menu__hamburger {
+    left: 0px;
+    box-shadow: 1px 1px 7px -2px rgba(0, 0, 0, 0.83);
+  }
+  .menu__checkbox:checked ~ .nav__mobile-wrapper {
+    left: 70px;
+  }
+  .menu__checkbox:checked ~ .menu__hamburger span.first {
+    transform: rotate(45deg);
+    top: 6px;
+  }
+  .menu__checkbox:checked ~ .menu__hamburger span.second {
+    opacity: 0;
+  }
+  .menu__checkbox:checked ~ .menu__hamburger span.third {
+    transform: rotate(-45deg);
+    top: -10px;
+  }
