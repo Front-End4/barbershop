@@ -17,7 +17,7 @@
         cursor: pointer;
         position: absolute;
         top: 0;
-        left: calc(100vw - 70px);
+        right: 0;
         transition: left .3s;
         z-index: 1000;
         width: 70px;
@@ -132,7 +132,8 @@
     box-shadow: 1px 1px 7px -2px rgba(0, 0, 0, 0.83);
   }
   .menu__checkbox:checked ~ .nav__mobile-wrapper {
-    left: 70px;
+    right: 0;
+    left: auto;
   }
   .menu__checkbox:checked ~ .menu__hamburger span.first {
     transform: rotate(45deg);
